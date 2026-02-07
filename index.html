@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yarden Operations | Eastside Estate Systems</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+        <style>
+            :root {
+                --bg: #FDFCF8;
+                --green: #1E3124;
+                --gold: #D4AF37;
+                --text: #2c2c2c;
+                --accent-bg: #FFFFFF;
+            }
+            body { margin: 0; background-color: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
+            header { padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(30, 49, 36, 0.1); }
+            .logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--green); font-weight: 700; }
+            
+            /* Hero */
+            .hero { text-align: center; padding: 100px 20px; max-width: 850px; margin: 0 auto; }
+            h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 1rem; color: var(--green); letter-spacing: -1px; }
+            .section-label { text-transform: uppercase; letter-spacing: 3px; font-size: 0.7rem; color: var(--gold); font-weight: 700; margin-bottom: 30px; display: block; }
+    
+            /* Pricing Matrix */
+            .matrix { background: var(--accent-bg); padding: 80px 20px; border-top: 1px solid #EEE; border-bottom: 1px solid #EEE; }
+            .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 1100px; margin: 0 auto; border: 1px solid #EEE; }
+            .card { padding: 50px; border-right: 1px solid #EEE; background: #FFF; text-align: left; }
+            .price-tag { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--green); margin: 15px 0; }
+            .strike { text-decoration: line-through; color: #AAA; font-size: 1.1rem; display: block; }
+    
+            /* Intellectual Operator / Books */
+            .operator-section { padding: 100px 20px; max-width: 900px; margin: 0 auto; display: flex; gap: 60px; align-items: flex-start; }
+            .books-container { flex: 1; }
+            .book-list { list-style: none; padding: 0; margin-top: 30px; }
+            .book-list li { margin-bottom: 20px; border-bottom: 1px solid #EEE; padding-bottom: 15px; }
+            .book-title { font-weight: 600; font-size: 1.1rem; color: var(--green); }
+    
+            /* Contact Card UI */
+            .contact-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; max-width: 380px; margin: 80px auto; padding: 40px; text-align: center; }
+            .v-btn { display: inline-block; background: var(--green); color: white; padding: 18px 40px; text-decoration: none; margin-top: 25px; font-weight: 600; cursor: pointer; border: none; font-size: 0.9rem; letter-spacing: 1px; }
+            
+            footer { padding: 100px 20px; text-align: center; background: var(--green); color: var(--bg); }
+            .tagline { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--gold); }
+        </style>
+    </head>
+    <body>
+    
+    <header>
+        <div class="logo">YARDEN OPERATIONS</div>
+        <nav style="font-size: 0.75rem; letter-spacing: 1px;">NORTH ATLANTA CORRIDOR</nav>
+    </header>
+    
+    <section class="hero">
+        <span class="section-label">2026 Price Reset</span>
+        <h1>The Eastside Standard.</h1>
+        <p style="font-size: 1.2rem; font-weight: 300;">Systematic estate maintenance for <b>Smoke Rise, Lilburn, Duluth, and Stone Mountain.</b> Transparent pricing. High-precision results.</p>
+    </section>
+    
+    <section class="matrix">
+        <div class="grid">
+            <div class="card">
+                <h3>Standard Weekly</h3>
+                <span class="strike">$85.00</span>
+                <div class="price-tag">$55.00</div>
+                <p>Managed service for standard lots in Lilburn & Duluth.</p>
+            </div>
+            <div class="card" style="border-right: none;">
+                <h3>Premium Estate</h3>
+                <span class="strike">$145.00</span>
+                <div class="price-tag">$88.50</div>
+                <p>Dedicated stewardship for Smoke Rise & large estates.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="operator-section">
+        <div class="books-container">
+            <span class="section-label">The Intellectual Operator</span>
+            <h2 style="font-family: 'Playfair Display'; font-size: 2.4rem;">Systems over smiles.</h2>
+            <p>Yarden Ops is an extension of a life spent building better systems. We don't just "cut grass"—we apply a rigorous standard of stewardship to your property, informed by our work in automation and cultural research.</p>
+            
+            <ul class="book-list">
+                <li><span class="book-title">Automating You</span> — A framework for personal systems.</li>
+                <li><span class="book-title">Moture</span> — Exploring the relationship of driving and culture.</li>
+                <li><span class="book-title">Cult Diaspora</span> — Dynamics of community and belief.</li>
+                <li><span class="book-title">Time Y</span> — Redefining productivity for the owner-operator.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="contact-card">
+        <div style="font-family: 'Playfair Display'; font-size: 1.8rem; margin-bottom: 5px;">Yarden Operations</div>
+        <p style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.7rem; color: var(--gold);">Official Contact Card</p>
+        <hr style="margin: 25px 0; border: 0; border-top: 1px solid #eee;">
+        <button onclick="downloadVCard()" class="v-btn">SAVE CONTACT TO PHONE</button>
+    </section>
+    
+    <footer>
+        <div class="tagline">Glad to grow with you.</div>
+        <p style="margin-top: 40px; opacity: 0.5; font-size: 0.8rem;">YARDEN OPERATIONS LLC &copy; 2026 | LOCALLY OPERATED</p>
+    </footer>
+    
+    <script>
+    function downloadVCard() {
+        const vcard = \\`BEGIN:VCARD
+    VERSION:3.0
+    FN:Yarden Operations
+    ORG:Yarden Operations LLC
+    NOTE:Glad to grow with you.
+    TEL;TYPE=WORK,VOICE:6782302488
+    EMAIL;TYPE=PREF,INTERNET:yardenops@gmail.com
+    URL:https://yardenops.com
+    END:VCARD\\`;
+    
+        const blob = new Blob([vcard], { type: 'text/vcard' });
+        const url = window.URL.createObjectURL(blob);
+        const newLink = document.createElement('a');
+        newLink.download = 'Yarden_Operations.vcf';
+        newLink.href = url;
+        newLink.click();
+        window.URL.revokeObjectURL(url);
+    }
+    </script>
+    
+    </body>
+    </html>
+    
